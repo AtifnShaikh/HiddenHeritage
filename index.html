@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hidden Heritage — Stories that connect us</title>
+  <meta name="description" content="Discover Untold Stories, traditions, voices, and ways to celebrate diversity of Maharashtra" />
+  <!-- Leaflet CSS for map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="logo">Cultural Diversity</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#map">Culture Map</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <li><a href="#submit-story">Submit Your Story</a></li>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hidden Heritage — Stories that connect us</h1>
+      <p>Discover Untold Stories, traditions, voices, and ways to celebrate diversity of Maharashtra</p>
+      <div class="cta-buttons">
+        <a href="#stories" class="btn btn-primary">Explore Stories</a>
+        <a href="#get-involved" class="btn btn-secondary">Submit Your Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Stories -->
+  <section class="section" id="stories">
+    <div class="section-header">
+      <h2>Featured Stories</h2>
+      <p>Voices from around the world</p>
+    </div>
+    <div class="carousel">
+      <div class="carousel-track">
+        <article class="story-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23FCD34D' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23292524' font-size='20' font-family='Arial'%3EStory Image%3C/text%3E%3C/svg%3E" alt="Story preview" />
+          <div class="story-content">
+            <div class="story-tags">
+              <span class="tag">Asia</span>
+              <span class="tag">Traditions</span>
+            </div>
+            <h3>The Art of Tea Ceremonies</h3>
+            <p>Exploring the meditative practice that has brought communities together for centuries across East Asia.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+        <article class="story-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23FDE68A' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23292524' font-size='20' font-family='Arial'%3EStory Image%3C/text%3E%3C/svg%3E" alt="Story preview" />
+          <div class="story-content">
+            <div class="story-tags">
+              <span class="tag">Africa</span>
+              <span class="tag">Music</span>
+            </div>
+            <h3>Rhythms of Connection</h3>
+            <p>How West African drumming traditions continue to influence music and bring people together worldwide.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+        <article class="story-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%23FEF3C7' width='400' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23292524' font-size='20' font-family='Arial'%3EStory Image%3C/text%3E%3C/svg%3E" alt="Story preview" />
+          <div class="story-content">
+            <div class="story-tags">
+              <span class="tag">Americas</span>
+              <span class="tag">Language</span>
+            </div>
+            <h3>Preserving Indigenous Voices</h3>
+            <p>Meet the communities working to keep endangered languages alive and thriving for future generations.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn" aria-label="Previous">←</button>
+        <button class="carousel-btn" id="nextBtn" aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explainer Section -->
+  <section class="explainer" id="about">
+    <div class="explainer-content">
+      <div class="section-header">
+        <h2>What is Cultural Diversity?</h2>
+        <p>Cultural diversity celebrates the rich variety of human societies, traditions, and perspectives that make our world vibrant and interconnected. It's about recognizing that our differences strengthen communities and foster innovation, empathy, and understanding.</p>
+      </div>
+      <div class="explainer-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🌍</div>
+          <h3>Global Understanding</h3>
+          <p>Build bridges across cultures and develop deeper empathy for diverse perspectives.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">💡</div>
+          <h3>Innovation</h3>
+          <p>Diverse viewpoints spark creativity and lead to breakthrough solutions.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🤝</div>
+          <h3>Community</h3>
+          <p>Stronger, more resilient communities through shared experiences and mutual respect.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🎨</div>
+          <h3>Rich Traditions</h3>
+          <p>Access to a wealth of art, music, food, and customs from around the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Preview -->
+  <section class="section map-preview" id="map">
+    <div class="section-header">
+      <h2>Explore Cultures by Region</h2>
+      <p>Journey through traditions from every corner of the globe</p>
+    </div>
+    <div class="region-grid">
+      <div class="region-card">
+        <h3>🌏 Asia</h3>
+        <p><strong>Food:</strong> Dumplings, Curries, Sushi</p>
+        <p><strong>Music:</strong> Gamelan, K-Pop, Qawwali</p>
+        <p><strong>Greeting:</strong> Namaste, Konnichiwa</p>
+      </div>
+      <div class="region-card">
+        <h3>🌍 Africa</h3>
+        <p><strong>Food:</strong> Injera, Jollof Rice, Tagine</p>
+        <p><strong>Music:</strong> Afrobeat, Mbaqanga</p>
+        <p><strong>Greeting:</strong> Jambo, Sawubona</p>
+      </div>
+      <div class="region-card">
+        <h3>🌎 Americas</h3>
+        <p><strong>Food:</strong> Tacos, BBQ, Empanadas</p>
+        <p><strong>Music:</strong> Jazz, Samba, Mariachi</p>
+        <p><strong>Greeting:</strong> Hola, Oki, Hey</p>
+      </div>
+      <div class="region-card">
+        <h3>🌍 Europe</h3>
+        <p><strong>Food:</strong> Pasta, Pierogi, Tapas</p>
+        <p><strong>Music:</strong> Classical, Folk, Electronic</p>
+        <p><strong>Greeting:</strong> Bonjour, Ciao, Hej</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vlog Map Section -->
+  <section class="section" id="vlog-map">
+    <div class="section-header">
+      <h2>Share Your Vlog with the World</h2>
+      <p>Drop a pin, add your YouTube vlog, and connect your story to the cultural map!</p>
+    </div>
+    <form id="addVlogForm" class="vlog-form">
+      <input name="title" type="text" placeholder="Vlog Title" required />
+      <input name="url" type="url" placeholder="YouTube Video URL" required />
+      <input name="lat" type="number" step="any" placeholder="Latitude" required />
+      <input name="lng" type="number" step="any" placeholder="Longitude" required />
+      <button type="submit">Add Vlog</button>
+    </form>
+    <div id="map-vlog" style="height: 450px;"></div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay Connected</h2>
+      <p>Get monthly stories, resources, and event updates delivered to your inbox.</p>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p style="font-size: 0.875rem; margin-top: 1rem; opacity: 0.9;">We respect your privacy. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#map">Culture Map</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#get-involved">Submit a Story</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#partner">Partner with Us</a></li>
+          <li><a href="#donate">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#press">Press Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#terms">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Cultural Diversity. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Carousel functionality (for Featured Stories)
+    const track = document.querySelector(".carousel-track");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    let currentIndex = 0;
+    const cards = document.querySelectorAll(".story-card");
+    const totalCards = cards.length;
+
+    function updateCarousel() {
+      const cardWidth = cards[0].offsetWidth;
+      const gap = 32; // 2rem in pixels
+      const offset = currentIndex * (cardWidth + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < totalCards - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    // Handle window resize for carousel
+    window.addEventListener("resize", updateCarousel);
+
+    // Newsletter form
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const input = e.target.querySelector("input");
+      alert(`Thank you for subscribing! We'll send updates to ${input.value}`);
+      input.value = "";
+    }
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          navLinks.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+  <!-- Leaflet Map & Vlog Script -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize the vlog map
+      var map = L.map("map-vlog").setView([20, 0], 2);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Listen to vlog form submission
+      var form = document.getElementById("addVlogForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let title = form.title.value.trim();
+        let url = form.url.value.trim();
+        let lat = parseFloat(form.lat.value);
+        let lng = parseFloat(form.lng.value);
+
+        // Extract YouTube video ID for thumbnail
+        let ytMatch = url.match(
+          /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([a-zA-Z0-9_-]{11})/
+        );
+        let videoId = ytMatch ? ytMatch[1] : null;
+        let thumb = videoId
+          ? `https://img.youtube.com/vi/${videoId}/0.jpg`
+          : "https://via.placeholder.com/200x120?text=No+Thumbnail";
+
+        let popupHtml = `
+          <strong>${title}</strong><br>
+          <img src="${thumb}" alt="Vlog Thumbnail" class="vlog-thumb" />
+          <br><a class="vlog-link" href="${url}" target="_blank" rel="noopener noreferrer">Watch Vlog 🎥</a>
+        `;
+
+        L.marker([lat, lng])
+          .addTo(map)
+          .bindPopup(popupHtml)
+          .openPopup();
+
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
