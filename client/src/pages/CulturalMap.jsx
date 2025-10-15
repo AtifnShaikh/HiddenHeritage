@@ -177,7 +177,7 @@ export default function CulturalMapPage() {
       entryFee: '₹25 (Indians), ₹300 (Foreigners)',
       timings: '8:00 AM - 6:30 PM',
       image:
-        'https://images.unsplash.com/photo-1567157577867-05b01df5aa31?w=600&q=80',
+        'https://static.toiimg.com/photo/msid-92863946,width-96,height-65.cms',
       highlights: ['Light and Sound Show', 'Peshwa architecture', 'Historic fountains']
     },
     {
