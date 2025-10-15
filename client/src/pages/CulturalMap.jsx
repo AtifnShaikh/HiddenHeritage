@@ -15,6 +15,7 @@ import {
   Clock,
   X
 } from 'lucide-react';
+import AnimateOnScroll from '../components/AnimateOnScroll';
 
 export default function CulturalMapPage() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -235,6 +236,7 @@ export default function CulturalMapPage() {
             <div className="absolute bottom-20 right-6 w-96 h-96 bg-amber-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           </div>
 
+          <AnimateOnScroll>
           <div className="relative z-10 w-full px-6 sm:px-8 lg:px-12 text-center">
             <div className="mx-auto max-w-6xl animate-fade-in-up">
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-amber-900 mb-6 font-serif">
@@ -245,13 +247,15 @@ export default function CulturalMapPage() {
               </p>
             </div>
           </div>
+          </AnimateOnScroll>
         </section>
 
       {/* Filters Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-8 px-4 sm:px-6 lg:px-8 bg-white/60 backdrop-blur-sm sticky top-20 z-40 shadow-lg">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-4 items-center">
-            <div className="relative flex-1 w-full">
+          <div className="flex flex-col lg:flex-row gap-4 items-center justify-end">
+            {/* <div className="relative flex-1 w-full">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-amber-600" size={20} />
               <input
                 type="text"
@@ -260,7 +264,7 @@ export default function CulturalMapPage() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-4 py-3 bg-amber-50 border-2 border-amber-200 rounded-xl focus:outline-none focus:border-orange-500 transition-colors text-amber-900"
               />
-            </div>
+            </div> */}
 
             <select
               value={selectedDistrict}
@@ -284,8 +288,10 @@ export default function CulturalMapPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Category Filters */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-wrap gap-3 justify-center">
@@ -307,8 +313,10 @@ export default function CulturalMapPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Vlog Submission Form */}
+      <AnimateOnScroll delay="200ms">
       {showVlogForm && (
         <section className="py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
@@ -346,8 +354,10 @@ export default function CulturalMapPage() {
           </div>
         </section>
       )}
+      </AnimateOnScroll>
 
       {/* Heritage Sites Grid */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
@@ -396,8 +406,10 @@ export default function CulturalMapPage() {
           )}
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* User Submitted Vlogs */}
+      <AnimateOnScroll delay="200ms">
       {vlogs.length > 0 && (
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-100 to-orange-100">
           <div className="max-w-7xl mx-auto">
@@ -424,8 +436,10 @@ export default function CulturalMapPage() {
           </div>
         </section>
       )}
+      </AnimateOnScroll>
 
       {/* Site Detail Modal */}
+      <AnimateOnScroll delay="200ms">
       {selectedSite && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
           <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform animate-scale-in">
@@ -474,6 +488,7 @@ export default function CulturalMapPage() {
           </div>
         </div>
       )}
+      </AnimateOnScroll>
 
       {/* Footer */}
       <footer className="bg-gradient-to-br from-amber-900 to-orange-900 text-amber-50 py-12 px-4 sm:px-6 lg:px-8">
