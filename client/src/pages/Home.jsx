@@ -20,21 +20,21 @@ export default function HomePage() {
       name: "Lonar Lake",
       district: "Buldhana",
       description: "A mysterious crater lake formed by a meteor impact 50,000 years ago",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+      image: "https://www.ourbreathingplanet.com/wp-content/uploads/2019/09/Lonar-Lake.jpg"
     },
     {
       id: 2,
       name: "Panhala Fort",
       district: "Kolhapur",
       description: "One of the largest and most strategic forts of the Deccan",
-      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80"
+      image: "https://media-cdn.tripadvisor.com/media/photo-s/0d/48/e5/23/panhala-fort.jpg"
     },
     {
       id: 3,
       name: "Elephanta Caves",
       district: "Mumbai",
       description: "Ancient rock-cut temples dedicated to Lord Shiva",
-      image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80"
+      image: "https://indiaforyou.in/wp-content/uploads/2016/06/elc.jpg"
     }
   ];
 

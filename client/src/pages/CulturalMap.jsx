@@ -69,7 +69,7 @@ export default function CulturalMapPage() {
       entryFee: '₹25 per person',
       timings: '6:00 AM - 6:00 PM',
       image:
-        'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80',
+        'https://media-cdn.tripadvisor.com/media/photo-s/0d/48/e5/23/panhala-fort.jpg',
       highlights: ['Teen Darwaza', 'Sajja Kothi', 'Andhar Bavadi']
     },
     {
@@ -84,7 +84,7 @@ export default function CulturalMapPage() {
       entryFee: 'Free',
       timings: 'Open 24 hours',
       image:
-        'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80',
+        'https://www.ourbreathingplanet.com/wp-content/uploads/2019/09/Lonar-Lake.jpg',
       highlights: ['Kamalja Devi Temple', 'Daityasudan Temple', 'Unique ecosystem']
     },
     {
@@ -100,7 +100,7 @@ export default function CulturalMapPage() {
       entryFee: '₹40 (Indians), ₹600 (Foreigners)',
       timings: '9:00 AM - 5:30 PM (Closed Mondays)',
       image:
-        'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80',
+        'https://indiaforyou.in/wp-content/uploads/2016/06/elc.jpg',
       highlights: ['Trimurti sculpture', 'Rock-cut architecture', 'Ancient murals']
     },
     {
@@ -116,7 +116,7 @@ export default function CulturalMapPage() {
       entryFee: '₹40 (Indians), ₹600 (Foreigners)',
       timings: '9:00 AM - 5:30 PM (Closed Mondays)',
       image:
-        'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&q=80',
+        'https://www.revv.co.in/blogs/wp-content/uploads/2020/09/Bhaja-Caves-768x576.jpg',
       highlights: ['Ancient paintings', 'Buddhist architecture', 'Jataka tales murals']
     },
     {
@@ -132,7 +132,7 @@ export default function CulturalMapPage() {
       entryFee: '₹35 per person',
       timings: '8:00 AM - 6:00 PM',
       image:
-        'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600&q=80',
+        'https://wallpaperaccess.com/full/6522957.png',
       highlights: ['Rajyabhishek Sthal', 'Maha Darwaza', 'Ropeway facility']
     },
     {
@@ -147,23 +147,8 @@ export default function CulturalMapPage() {
       entryFee: 'Free (Water sports extra)',
       timings: 'Open 24 hours',
       image:
-        'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&q=80',
+        'https://c8.alamy.com/comp/2AXM0X4/malvan-india-december-22-2019-tarkarli-beach-famous-for-water-sports-activity-in-india-banana-ride-enjoyed-by-tourists-2AXM0X4.jpg',
       highlights: ['Scuba diving', 'Snorkeling', 'Sindhudurg Fort nearby']
-    },
-    {
-      id: 7,
-      name: 'Sula Vineyards',
-      district: 'Nashik',
-      category: 'Food',
-      latitude: 20.0461,
-      longitude: 73.7679,
-      description: "India's premier wine destination with tours and tastings",
-      bestTime: 'September to March',
-      entryFee: '₹600 (includes wine tasting)',
-      timings: '11:30 AM - 11:00 PM',
-      image:
-        'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&q=80',
-      highlights: ['Wine tasting', 'Vineyard tours', 'Gourmet dining']
     },
     {
       id: 8,
@@ -192,7 +177,7 @@ export default function CulturalMapPage() {
       entryFee: '₹20 per person',
       timings: '6:00 AM - 6:00 PM',
       image:
-        'https://images.unsplash.com/photo-1604608672516-f1b9b1522139?w=600&q=80',
+        'https://th.bing.com/th/id/R.52971b17cb062773e4bcec9874b6dbf2?rik=BOv3Wc910UPlwQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-JuGbCBQtdgQ%2fVM0G-cJlmXI%2fAAAAAAAAB4A%2fKtlA0_WnXmw%2fs1600%2fPratapgad%252Bfort%252Bin%252Bmaharashtra.jpg&ehk=%2bfffBS%2fGiHucYHZEyzBkzFGwpIQl2q%2fOzjK2rFcfgsQ%3d&risl=&pid=ImgRaw&r=0',
       highlights: ['Afzal Khan\'s tomb', 'Bhavani Temple', 'Panoramic views']
     },
     {
@@ -207,7 +192,7 @@ export default function CulturalMapPage() {
       entryFee: '₹15 per person',
       timings: '8:00 AM - 6:00 PM',
       image:
-        'https://images.unsplash.com/photo-1599009434229-9c1e5b1ae4c0?w=600&q=80',
+        'https://www.indiatravel.app/wp-content/uploads/2024/02/Gwalior-Fort.jpg',
       highlights: ['Nehru\'s prison cell', 'Historic architecture', 'Museum']
     }
   ];

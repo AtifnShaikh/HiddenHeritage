@@ -37,7 +37,7 @@ export default function StoriesPage() {
       date: "March 15, 2025",
       readTime: "8 min read",
       likes: 245,
-      image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+      image: "https://media-cdn.tripadvisor.com/media/photo-s/0d/48/e5/23/panhala-fort.jpg",
       excerpt: "Perched majestically in the Sahyadri mountains, Panhala Fort tells tales of Maratha valor and strategic brilliance. This ancient fortress witnessed some of the most pivotal moments in Maharashtra's history...",
       content: "Panhala Fort, one of the largest and most strategically important forts in the Deccan, stands as a testament to the architectural prowess and military strategy of ancient Maharashtra. Built in the 12th century by the Shilahara dynasty, this fortress spans over 7.25 kilometers and sits at an elevation of 3,177 feet. The fort has witnessed numerous battles and has been under the rule of various dynasties including the Marathas, Mughals, and British. Chhatrapati Shivaji Maharaj spent over 500 days here, making it one of his favorite forts. The fort features impressive structures like the Teen Darwaza (three gates), Sajja Kothi (granary), and the Andhar Bavadi (inner well). Walking through these ancient corridors, one can almost hear the echoes of history and feel the presence of the brave warriors who defended this magnificent fortress.",
       featured: true
@@ -51,7 +51,7 @@ export default function StoriesPage() {
       date: "March 10, 2025",
       readTime: "6 min read",
       likes: 189,
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      image: "https://www.ourbreathingplanet.com/wp-content/uploads/2019/09/Lonar-Lake.jpg",
       excerpt: "Formed 50,000 years ago by a meteor impact, Lonar Lake is a geological wonder that continues to mystify scientists and fascinate travelers with its unique ecosystem...",
       content: "Lonar Lake is not just any crater lake—it's one of only four known hyper-velocity impact craters in basaltic rock anywhere on Earth. The impact created a nearly circular crater approximately 1.8 kilometers in diameter and 150 meters deep. What makes this lake truly extraordinary is its unique water chemistry. The lake has both saline and alkaline properties, with different salinity levels at different depths. This creates a rare environment where specialized microorganisms thrive. Ancient temples around the lake, including the Kamalja Devi Temple and Daityasudan Temple, add a spiritual dimension to this scientific marvel. The lake changes colors throughout the year, appearing blue-green in some seasons and reddish in others due to the presence of various algae species.",
       featured: true
@@ -65,7 +65,7 @@ export default function StoriesPage() {
       date: "March 8, 2025",
       readTime: "10 min read",
       likes: 312,
-      image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80",
+      image: "https://indiaforyou.in/wp-content/uploads/2016/06/elc.jpg",
       excerpt: "The ancient rock-cut temples of Elephanta Island house some of the most magnificent sculptures of Lord Shiva, carved with devotion and artistic brilliance...",
       content: "Located on Elephanta Island in Mumbai Harbor, these UNESCO World Heritage caves date back to the 5th to 8th centuries. The main cave features the iconic Trimurti, a 20-foot high sculpture depicting three faces of Shiva as Creator, Preserver, and Destroyer. The caves showcase exceptional artistry with intricate carvings depicting various aspects of Shiva including Nataraja, Ardhanarishvara, and Kalyanasundara. The Portuguese named the island after the large stone elephant found here. Despite centuries of damage from natural erosion and human activity, the caves remain a stunning example of rock-cut architecture and Hindu mythology brought to life in stone.",
       featured: false
@@ -79,7 +79,7 @@ export default function StoriesPage() {
       date: "March 5, 2025",
       readTime: "5 min read",
       likes: 276,
-      image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&q=80",
+      image: "https://img.freepik.com/premium-photo/indian-famous-street-food-vada-pav_55610-2880.jpg?w=2000",
       excerpt: "From humble street corners to the hearts of millions, the story of vada pav is the story of Mumbai itself—fast, flavorful, and deeply rooted in local culture...",
       content: "Invented in 1966 by Ashok Vaidya near Dadar station, vada pav was created as an affordable and filling meal for textile mill workers. Today, it's not just food—it's an emotion that connects every Mumbaikar. The simple yet genius combination of a spicy potato fritter sandwiched in a soft bun, served with chutneys, represents Mumbai's spirit of innovation and inclusivity. What started as a working-class snack has now become an iconic street food recognized worldwide. Each vada pav vendor has their own secret recipe and loyal customers who swear by their particular taste.",
       featured: false
@@ -93,7 +93,7 @@ export default function StoriesPage() {
       date: "March 1, 2025",
       readTime: "7 min read",
       likes: 198,
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+      image: "https://static.wixstatic.com/media/fb52ba_c031b36d78c542feafe6daaf5aa3348a~mv2.jpg/v1/fill/w_856,h_571,al_c,lg_1,q_85/fb52ba_c031b36d78c542feafe6daaf5aa3348a~mv2.jpg",
       excerpt: "With its powerful rhythm and expressive dance, Lavani is more than just a folk art form—it's the voice of Maharashtra's cultural soul...",
       content: "Originating in the Peshwa era, Lavani combines traditional song and dance to tell stories of love, politics, and society. The dancers, adorned in nine-yard saris, perform to the beat of the dholki, creating an unforgettable spectacle. Lavani has been a medium of social commentary and entertainment for centuries. The art form showcases the strength and grace of women performers who have kept this tradition alive through generations. Modern adaptations have brought Lavani to film and stage, but its essence remains rooted in the folk traditions of Maharashtra.",
       featured: false
@@ -107,7 +107,7 @@ export default function StoriesPage() {
       date: "February 28, 2025",
       readTime: "12 min read",
       likes: 423,
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
+      image: "https://www.revv.co.in/blogs/wp-content/uploads/2020/09/Bhaja-Caves-768x576.jpg",
       excerpt: "Hidden in a horseshoe-shaped gorge, the Ajanta Caves preserve some of the finest examples of ancient Indian art and Buddhist architecture...",
       content: "Dating from the 2nd century BCE to 480 CE, these 30 rock-cut Buddhist caves are adorned with masterful paintings and sculptures that depict the life of Buddha and various Jataka tales. UNESCO declared them a World Heritage Site in 1983. The caves were abandoned around 650 CE and remained hidden for over a millennium until their rediscovery in 1819 by a British officer during a hunting expedition. The murals inside showcase sophisticated artistic techniques with natural pigments that have survived centuries. Each cave tells a different story, from monasteries to prayer halls, revealing the evolution of Buddhist art and architecture.",
       featured: true
@@ -121,7 +121,7 @@ export default function StoriesPage() {
       date: "February 25, 2025",
       readTime: "9 min read",
       likes: 334,
-      image: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80",
+      image: "https://wallpaperaccess.com/full/6522957.png",
       excerpt: "The crown jewel of the Maratha Empire, Raigad Fort was where Chhatrapati Shivaji Maharaj was coronated in 1674, marking the birth of the Maratha kingdom...",
       content: "Situated at 2,700 feet above sea level, Raigad was rebuilt by Shivaji Maharaj and served as his capital. The fort features the famous Maha Darwaza, ruins of the royal palace, and the queen's quarters, all speaking volumes about Maratha grandeur. The Rajyabhishek Sthal (coronation site) still stands as a powerful reminder of that historic day when Shivaji was crowned Chhatrapati. The fort's strategic location provided natural defense from all sides. Today, visitors can reach the fort via a ropeway or by climbing approximately 1,450 steps, each step echoing the glory of the Maratha Empire.",
       featured: false
@@ -135,7 +135,7 @@ export default function StoriesPage() {
       date: "February 20, 2025",
       readTime: "6 min read",
       likes: 267,
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+      image: "https://c8.alamy.com/comp/2AXM0X4/malvan-india-december-22-2019-tarkarli-beach-famous-for-water-sports-activity-in-india-banana-ride-enjoyed-by-tourists-2AXM0X4.jpg",
       excerpt: "With crystal-clear waters and pristine white sands, Tarkarli Beach offers a slice of tropical paradise along Maharashtra's Konkan coast...",
       content: "Tarkarli is famous for its clear waters where you can see the ocean floor even at 20 feet depth. The beach is perfect for water sports like scuba diving, snorkeling, and parasailing, while the nearby Sindhudurg Fort adds historical charm. The Karli River meets the Arabian Sea here, creating a unique ecosystem. The beach remains relatively untouched by mass tourism, offering a peaceful retreat. Local Malvani cuisine, especially seafood, is another highlight that draws food lovers from across the state.",
       featured: false
