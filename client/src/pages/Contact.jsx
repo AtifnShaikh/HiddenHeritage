@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Send, MessageCircle, Clock, Facebook, Twitter, Instagram, Youtube, CheckCircle, Globe } from 'lucide-react';
+import AnimateOnScroll from '../components/AnimateOnScroll';
 
 export default function ContactPage() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -129,6 +130,7 @@ export default function ContactPage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
+          <AnimateOnScroll>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <MessageCircle className="w-20 h-20 mx-auto mb-6 text-orange-600 animate-bounce" />
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-amber-900 mb-6 font-serif">
@@ -138,9 +140,11 @@ export default function ContactPage() {
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
           </p>
         </div>
+          </AnimateOnScroll>
       </section>
 
       {/* Contact Methods */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -164,8 +168,10 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Contact Form & Info */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
@@ -298,33 +304,26 @@ export default function ContactPage() {
                   Quick Links
                 </h3>
                 <div className="space-y-3">
-                  {[
-                    { name: 'Submit Your Story', link: '#get-involved' },
-                    { name: 'Browse Heritage Sites', link: '#cultural-map' },
-                    { name: 'Read Stories', link: '#stories' },
-                    { name: 'Volunteer Program', link: '#volunteer' },
-                    { name: 'FAQ', link: '#faq' },
-                    { name: 'Privacy Policy', link: '#privacy' }
-                  ].map((link, idx) => {
+                  {['Submit Your Story', 'Browse Heritage Sites', 'Read Stories', 'Volunteer Program', 'FAQ', 'Privacy Policy'].map((link, idx) => {
                     // map known internal anchors to routes
-                    if (link.link === '#get-involved' || link.name === 'Volunteer Program') {
+                    if (link === 'Submit Your Story' || link === 'Volunteer Program') {
                       return (
-                        <Link key={idx} to="/get-involved" className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link.name}</Link>
+                        <Link key={idx} to="/get-involved" className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link}</Link>
                       );
                     }
-                    if (link.link === '#cultural-map') {
+                    if (link === 'Browse Heritage Sites') {
                       return (
-                        <Link key={idx} to="/cultural-map" className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link.name}</Link>
+                        <Link key={idx} to="/cultural-map" className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link}</Link>
                       );
                     }
-                    if (link.link === '#stories') {
+                    if (link === 'Read Stories') {
                       return (
-                        <Link key={idx} to="/stories" className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link.name}</Link>
+                        <Link key={idx} to="/stories" className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link}</Link>
                       );
                     }
                     // leave fragment links as anchors (FAQ, Privacy)
                     return (
-                      <a key={idx} href={link.link} className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link.name}</a>
+                      <a key={idx} href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="block text-amber-700 hover:text-orange-600 font-medium transition-colors py-2 hover:pl-4 duration-300">→ {link}</a>
                     );
                   })}
                 </div>
@@ -336,19 +335,15 @@ export default function ContactPage() {
                   Follow Us
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { icon: Facebook, name: 'Facebook', color: 'from-blue-600 to-blue-700', link: '#' },
-                    { icon: Twitter, name: 'Twitter', color: 'from-sky-500 to-blue-600', link: '#' },
-                    { icon: Instagram, name: 'Instagram', color: 'from-pink-600 to-purple-600', link: '#' },
-                    { icon: Youtube, name: 'YouTube', color: 'from-red-600 to-red-700', link: '#' }
-                  ].map((social, idx) => (
+                  {[Facebook, Twitter, Instagram, Youtube].map((Icon, idx) => (
                     <a
                       key={idx}
-                      href={social.link}
-                      className={`flex items-center gap-3 bg-gradient-to-r ${social.color} text-white px-4 py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300`}
+                      href="javascript:void(0)"
+                      className={`flex items-center gap-3 bg-gradient-to-r ${['from-blue-600 to-blue-700', 'from-sky-500 to-blue-600', 'from-pink-600 to-purple-600', 'from-red-600 to-red-700'][idx]} text-white px-4 py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300`}
+                      aria-label={`social-${idx}`}
                     >
-                      <social.icon size={24} />
-                      <span className="font-semibold">{social.name}</span>
+                      <Icon size={24} />
+                      <span className="font-semibold">{['Facebook', 'Twitter', 'Instagram', 'YouTube'][idx]}</span>
                     </a>
                   ))}
                 </div>
@@ -357,8 +352,10 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Regional Offices */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-100 to-orange-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -409,8 +406,10 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* FAQ Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8" id="faq">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -442,8 +441,10 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Newsletter Signup */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-500 to-amber-600">
         <div className="max-w-4xl mx-auto text-center">
           <Mail className="w-20 h-20 mx-auto mb-6 text-white" />
@@ -473,6 +474,7 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Footer */}
       <footer className="bg-gradient-to-br from-amber-900 to-orange-900 text-amber-50 py-12 px-4 sm:px-6 lg:px-8">

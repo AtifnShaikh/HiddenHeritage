@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Eye, Target, Users, Award, Globe, ArrowRight, Mountain, BookOpen, Camera } from 'lucide-react';
+import AnimateOnScroll from '../components/AnimateOnScroll';
 
 export default function AboutPage() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -108,6 +109,7 @@ export default function AboutPage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
+          <AnimateOnScroll>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-amber-900 mb-6 font-serif">
@@ -118,9 +120,11 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
+          </AnimateOnScroll>
       </section>
 
       {/* Mission & Vision */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
@@ -152,8 +156,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Core Values */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-100 to-orange-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -186,8 +192,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Impact Statistics */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -217,8 +225,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Timeline */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-100 to-amber-100">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -258,8 +268,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Team Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -294,10 +306,13 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Call to Action */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-500 to-amber-600">
         <div className="max-w-4xl mx-auto text-center">
+          <Heart className="w-20 h-20 mx-auto mb-6 text-white" />
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 font-serif">
             Join Our Mission
           </h2>
@@ -322,6 +337,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Footer */}
       <footer className="bg-gradient-to-br from-amber-900 to-orange-900 text-amber-50 py-12 px-4 sm:px-6 lg:px-8">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Upload, Users, Heart, Camera, MapPin, BookOpen, Award, CheckCircle, Send, FileText, Video, Star } from 'lucide-react';
+import AnimateOnScroll from '../components/AnimateOnScroll';
 
 export default function GetInvolvedPage() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -93,6 +94,7 @@ export default function GetInvolvedPage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
+        <AnimateOnScroll>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <Heart className="w-20 h-20 mx-auto mb-6 text-orange-600 animate-bounce" />
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-amber-900 mb-6 font-serif">
@@ -107,9 +109,11 @@ export default function GetInvolvedPage() {
             <span className="text-amber-700">Active Contributors</span>
           </div>
         </div>
+        </AnimateOnScroll>
       </section>
 
       {/* Ways to Contribute */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -142,8 +146,10 @@ export default function GetInvolvedPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Contribution Forms */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-100 to-orange-100">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -489,8 +495,10 @@ export default function GetInvolvedPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Benefits Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -517,8 +525,10 @@ export default function GetInvolvedPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Community Stats */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-orange-500 to-amber-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-repeat" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30z' fill='%23fff' fill-opacity='0.1'/%3E%3C/svg%3E')" }}></div>
@@ -532,27 +542,24 @@ export default function GetInvolvedPage() {
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: '5,000+', label: 'Active Contributors', icon: Users },
-              { number: '1,200+', label: 'Stories Shared', icon: BookOpen },
-              { number: '3,500+', label: 'Photos Uploaded', icon: Camera },
-              { number: '500+', label: 'Vlogs Created', icon: Video }
-            ].map((stat, idx) => (
+            {[ '5,000+', '1,200+', '3,500+', '500+' ].map((stat, idx) => (
               <div key={idx} className="transform hover:scale-110 transition-all duration-300">
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-amber-100" />
+                <Users className="w-12 h-12 mx-auto mb-4 text-amber-100" />
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2 font-serif">
-                  {stat.number}
+                  {stat}
                 </div>
                 <div className="text-lg md:text-xl text-amber-100 font-medium">
-                  {stat.label}
+                  {[ 'Active Contributors', 'Stories Shared', 'Photos Uploaded', 'Vlogs Created' ][idx]}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Testimonials */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -613,8 +620,10 @@ export default function GetInvolvedPage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* CTA Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-100 to-orange-100">
         <div className="max-w-4xl mx-auto text-center">
           <Heart className="w-20 h-20 mx-auto mb-6 text-orange-600" />
@@ -633,6 +642,7 @@ export default function GetInvolvedPage() {
           </button>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Footer */}
       <footer className="bg-gradient-to-br from-amber-900 to-orange-900 text-amber-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -644,7 +654,7 @@ export default function GetInvolvedPage() {
             <span className="text-3xl font-bold font-serif">Hidden Heritage</span>
           </div>
           
-          <p className="text-lg text-amber-200 mb-8">
+          <p className="text-lg text-amber-200 mb-8 max-w-2xl mx-auto">
             Preserving and celebrating the rich cultural tapestry of Maharashtra
           </p>
           

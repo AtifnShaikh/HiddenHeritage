@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Filter, MapPin, Clock, User, Heart, Share2, BookOpen, Mountain, Camera, Music, Utensils, ChevronRight, Star, ArrowLeft } from 'lucide-react';
+import AnimateOnScroll from '../components/AnimateOnScroll';
 
 export default function StoriesPage() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -162,6 +163,7 @@ export default function StoriesPage() {
       <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100">
         {/* Navigation removed as it's handled by App.jsx */}
 
+        <AnimateOnScroll>
         <article className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
@@ -225,6 +227,7 @@ export default function StoriesPage() {
             </div>
           </div>
         </article>
+        </AnimateOnScroll>
       </div>
     );
   }
@@ -241,6 +244,7 @@ export default function StoriesPage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
+        <AnimateOnScroll>
   <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-amber-900 mb-6 font-serif">
             Heritage Stories
@@ -249,8 +253,10 @@ export default function StoriesPage() {
             Discover the untold tales of Maharashtra's rich cultural heritage
           </p>
         </div>
+        </AnimateOnScroll>
       </section>
 
+      <AnimateOnScroll delay="200ms">
       <section className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl mb-8">
@@ -335,7 +341,7 @@ export default function StoriesPage() {
                   </p>
 
                   <div className="flex items-center justify-between pt-4 border-t border-amber-200">
-                    <div className="flex items-center gap-4 text-sm text-amber-600">
+                    <div className="flex items-center gap-6 text-sm text-amber-600">
                       <span className="flex items-center gap-1">
                         <Heart size={16} />
                         {story.likes}
@@ -365,6 +371,7 @@ export default function StoriesPage() {
           )}
         </div>
       </section>
+      </AnimateOnScroll>
 
       <footer className="bg-gradient-to-br from-amber-900 to-orange-900 text-amber-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
@@ -375,7 +382,7 @@ export default function StoriesPage() {
             <span className="text-3xl font-bold font-serif">Hidden Heritage</span>
           </div>
           
-          <p className="text-lg text-amber-200 mb-8">
+          <p className="text-lg text-amber-200 mb-8 max-w-2xl mx-auto">
             Preserving and celebrating the rich cultural tapestry of Maharashtra
           </p>
           

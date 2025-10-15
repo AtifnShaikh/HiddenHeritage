@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Book, Users, Mail, ChevronRight, Play } from 'lucide-react';
+import AnimateOnScroll from '../components/AnimateOnScroll';
 
 export default function HomePage() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,6 +53,7 @@ export default function HomePage() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
 
+        <AnimateOnScroll>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-amber-900 mb-6 font-serif leading-tight">
@@ -95,9 +97,11 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        </AnimateOnScroll>
       </section>
 
       {/* Featured Places Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
@@ -148,8 +152,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Quick Stats Section */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 bg-gradient-to-r from-orange-500 to-amber-600 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-repeat" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30z' fill='%23fff' fill-opacity='0.1'/%3E%3C/svg%3E')" }}></div>
@@ -157,26 +163,23 @@ export default function HomePage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: '500+', label: 'Heritage Sites' },
-              { number: '36', label: 'Districts' },
-              { number: '1000+', label: 'Stories Shared' },
-              { number: '50K+', label: 'Visitors' }
-            ].map((stat, idx) => (
+            {['500+', '36', '1000+', '50K+'].map((stat, idx) => (
               <div key={idx} className="transform hover:scale-110 transition-all duration-300">
                 <div className="text-5xl md:text-6xl font-bold text-white mb-2 font-serif">
-                  {stat.number}
+                  {stat}
                 </div>
                 <div className="text-lg md:text-xl text-amber-100 font-medium">
-                  {stat.label}
+                  {['Heritage Sites', 'Districts', 'Stories Shared', 'Visitors'][idx]}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Call to Action */}
+      <AnimateOnScroll delay="200ms">
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-amber-100 to-orange-100 rounded-3xl p-12 shadow-2xl">
           <MapPin className="w-16 h-16 mx-auto mb-6 text-orange-600" />
@@ -195,6 +198,7 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+      </AnimateOnScroll>
 
       {/* Footer */}
       <footer className="bg-gradient-to-br from-amber-900 to-orange-900 text-amber-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -211,19 +215,14 @@ export default function HomePage() {
           </p>
           
           <div className="flex justify-center space-x-8 mb-8">
-            {[
-              { icon: Book, label: 'Stories' },
-              { icon: MapPin, label: 'Map' },
-              { icon: Users, label: 'Community' },
-              { icon: Mail, label: 'Contact' }
-            ].map((item, idx) => (
+            {[ Book, MapPin, Users, Mail ].map((Icon, idx) => (
               <Link
                 key={idx}
-                to={item.label === 'Stories' ? '/stories' : item.label === 'Map' ? '/cultural-map' : item.label === 'Community' ? '/get-involved' : '/contact'}
+                to={['/stories', '/cultural-map', '/get-involved', '/contact'][idx]}
                 className="flex flex-col items-center gap-2 hover:text-amber-300 transition-colors group"
               >
-                <item.icon className="group-hover:scale-110 transition-transform" size={24} />
-                <span className="text-sm">{item.label}</span>
+                <Icon className="group-hover:scale-110 transition-transform" size={24} />
+                <span className="text-sm">{['Stories', 'Map', 'Community', 'Contact'][idx]}</span>
               </Link>
             ))}
           </div>
