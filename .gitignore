@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Lock files
+package-lock.json
+client/package-lock.json
+server/package-lock.json
+
+# Environment variables
+.env
+client/.env
+server/.env
+
+# Ignore the entire server directory (as requested by user)
+server/
